@@ -52,28 +52,39 @@ nr_numbers = int(input(f"How many numbers would you like?\n"))
 
 #Hard Level - Order of characters randomised:
 #e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
-random_letter_pool=[]
-random_symbol_pool=[]
-random_number_pool=[]
-password=[]
-random_password=[]
-#ez
-for step_one in range(nr_letters):
-     step_one = random.choice(letters)
-     random_letter_pool.append(step_one)
-#print(random_letter_pool)
+# random_letter_pool=[]
+# random_symbol_pool=[]
+# random_number_pool=[]
+# password=[]
+# #ez
+# for step_one in range(nr_letters):
+#      step_one = random.choice(letters)
+#      random_letter_pool.append(step_one)
+# #print(random_letter_pool)
 
-for step_two in range(nr_symbols):
-     step_two = random.choice(symbols)
-     random_symbol_pool.append(step_two)
-#print(random_symbol_pool)
+# for step_two in range(nr_symbols):
+#      step_two = random.choice(symbols)
+#      random_symbol_pool.append(step_two)
+# #print(random_symbol_pool)
 
-for step_three in range(nr_numbers):
-     step_three = random.choice(numbers)
-     random_number_pool.append(step_three)
-#print(random_number_pool)
+# for step_three in range(nr_numbers):
+#      step_three = random.choice(numbers)
+#      random_number_pool.append(step_three)
+# #print(random_number_pool)
 
-password.append(random_letter_pool)
-password.append(random_symbol_pool)
-password.append(random_number_pool)
+# password.append(random_letter_pool)
+# password.append(random_symbol_pool)
+# password.append(random_number_pool)
 
+# random_password = [password]
+
+# print (random_password)
+
+#big dumb answer
+
+password=''
+
+for char in range (1, nr_letters + 1):
+    random_char = random.choice(letters)
+    password += random_char
+    print (password)
