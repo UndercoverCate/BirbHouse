@@ -88,3 +88,25 @@ for char in range (1, nr_letters + 1):
     random_char = random.choice(letters)
     password += random_char
     print (password)
+
+
+
+
+while wall_in_front() == False:
+    if at_goal() == True:
+        done()
+    if wall_in_front() == False:
+        move()
+    else: jump_up()
+
+
+
+
+
+    while wall_in_front() == False and wall_in_front() == True:
+    if at_goal() == True:
+        done()
+    if wall_in_front() == False:
+        move()
+    if wall_in_front() == True:
+        jump_up()
