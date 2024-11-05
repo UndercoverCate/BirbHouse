@@ -13,16 +13,6 @@ for blanks in chosen_word:
     placeholder += "_ "
 print (placeholder) 
 
-guess=''
-display = ""
-while (display) is not (chosen_word):
-    guess = input("Guess the letter of the word: ").lower()
-    for letters in chosen_word:
-        if letters == guess:
-            display += (guess)
-        else: print ("try again")
-    print(display)
-print("you win")
 
 
 
